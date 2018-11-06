@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>Hi, Admin</h2>
+	<a href="{{ url_for('new_newspost') }}">Create a News Post</a>
+	<a href="{{ url_for('new_securepost') }}">Create a Secure Post</a>
+{% endblock %}

@@ -1,0 +1,129 @@
+2018-10-10 21:15:02,786 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 21:23:47,571 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 21:47:02,718 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 22:28:23,011 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 22:29:31,509 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 22:35:17,705 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 22:57:50,148 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:05:50,318 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:06:07,281 ERROR: Exception on /adminpanel [GET] [in e:\newsite\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\newsite\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\newsite\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\newsite\app\routes.py", line 71, in adminpanel
+    return render_template('admin.html', title='Admin Panel', newsform=newsform, secureform=secureform)
+  File "e:\newsite\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "e:\newsite\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\newsite\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\newsite\app\templates\admin.html", line 36, in template
+    <p>{{ form.submit() }} </p>
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 170, in parse_statements
+    self.fail_eof(end_tokens)
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 104, in fail_eof
+    return self._fail_ut_eof(None, stack, lineno)
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "e:\newsite\venv\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2018-10-10 23:06:53,521 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:08:09,835 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:09:14,195 ERROR: Exception on /adminpanel [GET] [in e:\newsite\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\newsite\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\newsite\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\newsite\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\newsite\app\routes.py", line 71, in adminpanel
+    return render_template('admin.html', title='Admin Panel', newsform=newsform, secureform=secureform)
+  File "e:\newsite\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "e:\newsite\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "e:\newsite\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\newsite\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\newsite\app\templates\admin.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\newsite\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\newsite\app\templates\admin.html", line 19, in block "content"
+    <p>{{ form.submit() }} </p>
+  File "e:\newsite\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-10-10 23:10:12,915 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:11:07,389 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:12:49,215 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:15:45,782 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:28:33,740 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:29:24,332 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:33:01,530 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-10-10 23:56:28,262 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:41:41,413 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:45:13,065 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:48:02,140 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:49:52,348 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:51:31,598 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:52:40,248 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:53:24,376 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:54:24,410 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:54:44,238 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:56:39,025 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:56:54,109 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:57:15,597 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:59:22,150 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 21:59:45,777 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 22:01:10,288 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 22:07:11,443 INFO: LET startup [in E:\newsite\app\__init__.py:28]
+2018-11-04 22:11:24,225 INFO: LET startup [in E:\newsite\app\__init__.py:28]

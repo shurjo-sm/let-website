@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ heading }}</h1>
+<div>
+{% for post in posts %}
+	<a href="{{ url_for('newspost', id=post.id) }}"><h4>{{ post.title }}</h4></a>
+	<h6>{{ post.timestamp }}</h6>
+{% endfor %}
+</div>
+{% endblock %}
