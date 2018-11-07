@@ -4,6 +4,6 @@
 <div>
 	<h3>{{ post.title }}</h3>
 	<h6>{{ timestamp }}</h6>
-	<p>{{ post.body }}</p>
+	<p>{{ post.body|safe }}</p>
 </div>
 {% endblock %}

@@ -4,6 +4,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User, NewsPost, SecurePost
 from app.forms import LoginForm, NewsPostForm, SecurePostForm
 from werkzeug.urls import url_parse
+from textile import textile
 
 @app.route('/')
 @app.route('/index')
@@ -68,7 +69,7 @@ def new_newspost():
 		return redirect(url_for('login'))
 	form = NewsPostForm()
 	if form.validate_on_submit():
-		newspost = NewsPost(title=form.title.data, body=form.body.data)
+		newspost = NewsPost(title=form.title.data, body=textile(form.body.data))
 		db.session.add(newspost)
 		db.session.commit()
 		flash('Your post is now live!')
@@ -83,7 +84,7 @@ def new_securepost():
 		return redirect(url_for('login'))
 	form = SecurePostForm()
 	if form.validate_on_submit():
-		securepost = SecurePost(title=form.title.data, body=form.body.data)
+		securepost = SecurePost(title=form.title.data, body=textile(form.body.data))
 		db.session.add(securepost)
 		db.session.commit()
 		flash('Your post is now live!')
