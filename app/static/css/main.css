@@ -12,10 +12,13 @@ h1 {
   font-weight: bold;
 }
 a {
-  color: red;
+  color: #FFE948;
+}
+header {
+  background: #FFE948;
+  padding-bottom: 20px;
 }
 #navigation {
-  backgroaund: rgba(0, 0, 0, 0.4);
   font-size: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -58,14 +61,14 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 160px;
-    background-color: #E3FF74;
   }
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 160px;
+    height: 200px;
     padding-top: 20px;
+    margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.9);
   }
